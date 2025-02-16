@@ -1,5 +1,6 @@
 var jwt = require('jsonwebtoken')
-let jwtSecret = 'secret'
+let jwtSecret = process.env.jwtSecret
+
 
 let checkToken = (req, res, next) => {
     let token = req.headers.authorization
