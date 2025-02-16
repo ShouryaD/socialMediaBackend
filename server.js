@@ -2,10 +2,10 @@ const express = require("express");
 const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
-const port = 3000;
 const cors = require('cors')
 const dbConfig = require("./dbConfig");
 dbConfig();
+const port = process.env.port || 3000;
 
 
 //all routes
