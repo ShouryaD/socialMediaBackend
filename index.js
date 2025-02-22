@@ -17,11 +17,12 @@ const messageRoutes = require('./routes/messageRoutes')
 app.set('view engine', 'ejs')
 
 //middleware
-app.use(cors({
-  origin: 'https://social-media-frontend-psi-one.vercel.app/',
+const corsOptions = {
+  origin: 'https://social-media-frontend-psi-one.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
-}))
+}
+app.use(cors(corsOptions))
 app.use(express.json({ limit: "50mb" }));
 app.use("/users", userRoutes);
 app.use('/posts', postRoutes)
