@@ -18,7 +18,7 @@ app.set('view engine', 'ejs')
 
 //middleware
 const corsOptions = {
-  origin: 'https://social-media-frontend-psi-one.vercel.app',
+  origin: 'https://social-media-frontend-theta-five.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }
