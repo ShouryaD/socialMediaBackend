@@ -18,7 +18,7 @@ app.set('view engine', 'ejs')
 
 //middleware
 app.use(cors({
-  origin: ['https://social-media-frontend-psi-one.vercel.app','https://vercel.com/shourya-dwivedis-projects/social-media-frontend/DfhyQRvMT1xaLDnTFpBHX4q3gkHs','social-media-frontend-psi-one.vercel.app','https://social-media-frontend-git-main-shourya-dwivedis-projects.vercel.app/','https://social-media-frontend-git-main-shourya-dwivedis-projects.vercel.app/'],
+  origin: 'https://social-media-frontend-psi-one.vercel.app/',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }))
